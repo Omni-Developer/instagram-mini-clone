@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.create-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+.create-post form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.create-post form input,
+.create-post form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  max-width: 100%;
+}
+.create-post form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.create-post form button:hover {
+  background-color: #0056b3;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.feed .post {
+  width: 400px;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-height: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+.feed .post img {
+  width: 100%;
+  height: 400px; /* increase from 340px */
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.feed .post h3 {
+  margin-bottom: 10px;
+  font-family: instagram-clone-font, sans-serif;
+}
+.feed .post p {
+  color: #555;
+  margin-top: 10px;
+}
+.post .btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.post button {
+  float: right;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.feed .btn-update {
+  float: right;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.feed .create-post-page {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.create-post-page:hover {
+  background-color: #218838;
+}
